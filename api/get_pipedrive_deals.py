@@ -5,8 +5,8 @@ def handler(request):
     status = request.args.get("status", "open")
     
     # Use your real token here
-    api_token = "YOUR_PIPEDRIVE_TOKEN"
-    company_domain = "YOUR_DOMAIN"  # e.g., pinkpineapple
+    api_token = "5f6029bd4aae2533a582f753886a705c9e3351a4"
+    company_domain = "Pink Pineapple"  # e.g., pinkpineapple
 
     url = f"https://{company_domain}.pipedrive.com/api/v1/deals?status={status}&api_token={api_token}"
     response = requests.get(url)
