@@ -8,7 +8,7 @@ def handler(request):
     api_token = "5f6029bd4aae2533a582f753886a705c9e3351a4"
     company_domain = "Pink Pineapple"  # e.g., pinkpineapple
 
-    url = f"https://pinkpineapple.pipedrive.com/api/v1/deals?status={status}&api_token={api_token}"
+    url = f"https://pinkpineapple.pipedrive.com/api/v1/deals?status=Qualified lead &api_token=5f6029bd4aae2533a582f753886a705c9e3351a4"
     response = requests.get(url)
     deals = response.json().get("data", [])
 
